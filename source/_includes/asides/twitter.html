@@ -1,13 +1,13 @@
 {% if site.twitter_user %}
 <section>
-  <h2>Latest Tweets</h2>
+  <h2>Derniers Tweets</h2>
   <ul id="tweets">
-    <li class="loading">Status updating...</li>
+    <li class="loading">Mise à jour du statut...</li>
   </ul>
   {% if site.twitter_follow_button %}
     <a href="http://twitter.com/{{ site.twitter_user }}" class="twitter-follow-button" data-show-count="{{ site.twitter_show_follower_count }}">Follow @{{ site.twitter_user }}</a>
   {% else %}
-    <p>Follow <a href="http://twitter.com/{{site.twitter_user}}">@{{ site.twitter_user }}</a></p>
+    <p>Suivre <a href="http://twitter.com/{{site.twitter_user}}">@{{ site.twitter_user }}</a></p>
   {% endif %}
 </section>
 {% endif %}
