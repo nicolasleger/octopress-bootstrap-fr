@@ -20,11 +20,13 @@
             </fieldset>
           </form>
         {% endif %}
+        {% if site.feedburner_user and site.feedburner_show_readers_count %}
         <ul class="nav pull-right">
           <li>
-            <a style="padding: 7px 0 0 0;" href="http://feeds.feedburner.com/brianarmstrong/vTOG"><img src="http://feeds.feedburner.com/~fc/brianarmstrong/vTOG?bg=a1cefc&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>            
+            <a style="padding: 7px 0 0 0;" href="http://feedburner.google.com/{{ site.feedburner_user }}"><img src="http://feeds.feedburner.com/~fc/{{ site.feedburner_user }}?bg=a1cefc&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt="" /></a>
           </li>
         </ul>
+	{% endif %}
       </div><!-- /.nav-collapse -->
     </div>
   </div><!-- /navbar-inner -->
